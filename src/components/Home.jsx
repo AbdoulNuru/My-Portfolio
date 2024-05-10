@@ -93,7 +93,7 @@ const Home = () => {
           {/* Tangira Kwivuga */}
           <div
             className="hero-area position-relative bg-half-120 pb-0"
-            style={{ backgroundImage: "url(img/murugo/home-shape.png)" }}
+            style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/img/murugo/home-shape.png)` }}
             id="home"
           >
             <div className="container">
@@ -119,9 +119,7 @@ const Home = () => {
                       />
                     </h1>
                     <p className="pera-title text-light-muted">
-                      Software Engineer with 2+ years of experience in software
-                      development industry and a bachelors degree in computer
-                      sofware engineering.
+                    Passionate Software Engineer with over 4+ years of hands-on experience in crafting robust and innovative solutions. Dedicated to pushing the boundaries of technology and delivering exceptional results through meticulous coding and problem-solving. Let's code the future together!
                       {/* a track record of success
                   in the information technology and services industry.
                   Expert in NodeJS, ReactJS, SpringBoot, Agile Software Development,
@@ -227,15 +225,14 @@ const Home = () => {
                                 ></span>
                               </h4>
                               <p className="text-light-muted mt-2">
-                                A software Engineer with a successful track
-                                record in the information technology and
-                                services industries. Expertise in NodeJS,
-                                ReactJS, SpringBoot, Agile Software Development,
-                                Test Driven Development, Continuous Integration
-                                and Delivery, and SQL/NoSQL Databases.
+                              An Experienced Engineer with a proven track record in the dynamic 
+                              realms of information technology and services. Proficient in Node.js, React, Next.js
+                              Spring Boot, and adept in Agile methodologies, Test-Driven Development, Continuous Integration, 
+                              and SQL/NoSQL databases. Passionate about leveraging cutting-edge 
+                              technologies to drive innovation and exceed client expectations.
                               </p>
                               <img
-                                src="img/signature.png"
+                                src={process.env.PUBLIC_URL + "/img/signature.png"}
                                 height="65"
                                 alt=""
                                 style={{ marginLeft: "-23px" }}
@@ -373,11 +370,35 @@ const Home = () => {
                 <div className="col-lg-8">
                   <div className="row">
                     <div className="main-timeline">
+                    <div className="timeline mt-4">
+                        <a href={() => false} className="timeline-content">
+                          <div className="timeline-icon text-primary">
+                            {/* <Navigation className="fea icon-md" /> */}
+                            <img
+                              src={process.env.PUBLIC_URL + "/img/bklogo.png"}
+                              className="fea icon-md"
+                              style={{ borderRadius: "15px" }}
+                              alt="gtbank logo"
+                            />
+                          </div>
+                          <h3 className="title mb-0">Software Engineer</h3>
+                          <small className="company">
+                            Bank Of Kigali
+                          </small>
+                          <span className="badge skill-badge education-badge margin-50 badge-light">
+                            Sept 2022 - Present
+                          </span>
+                          {/* <p className="description text-light-muted mt-2">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Integer males uada tellus lorem, et condimentum
+                      </p> */}
+                        </a>
+                      </div>
                       <div className="timeline mt-4">
                         <a href={() => false} className="timeline-content">
                           <div className="timeline-icon text-primary">
                             <img
-                              src="img/equitylogo.png"
+                              src={process.env.PUBLIC_URL + "/img/equitylogo.png"}
                               className="fea icon-md2"
                               alt="equitybank logo"
                             />
@@ -388,7 +409,7 @@ const Home = () => {
                             Equity Bank Rwanda PLC
                           </small>
                           <span className="badge skill-badge education-badge badge-light">
-                            Jun 2021 - Present
+                            Jun 2021 - Sept 2022
                           </span>
                           {/* <p className="description text-light-muted mt-2">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -401,7 +422,7 @@ const Home = () => {
                           <div className="timeline-icon text-primary">
                             {/* <Navigation className="fea icon-md" /> */}
                             <img
-                              src="img/gtlogo.png"
+                              src={process.env.PUBLIC_URL + "/img/gtlogo.png"}
                               className="fea icon-md"
                               style={{ borderRadius: "15px" }}
                               alt="gtbank logo"
@@ -425,7 +446,7 @@ const Home = () => {
                           <div className="timeline-icon text-primary">
                             {/* <Package className="fea icon-md" /> */}
                             <img
-                              src="img/andelalogo.png"
+                              src={process.env.PUBLIC_URL + "/img/andelalogo.png"}
                               className="fea icon-md"
                               alt="andela logo"
                             />
